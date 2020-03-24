@@ -17,22 +17,23 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        ArrayList<String> words = new ArrayList<>();
-        words.add("one");
-        words.add("two");
-        words.add("three");
-        words.add("four");
-        words.add("five");
-        words.add("six");
-        words.add("seven");
-        words.add("eight");
-        words.add("nine");
-        words.add("ten");
-        words.add("elevem");
+        ArrayList<Word> words = new ArrayList<>();
+        words.add(new Word("one", "ek"));
+        words.add(new Word("two", "dui"));
+        words.add(new Word("three", "tin"));
+        words.add(new Word("four", "char"));
+        words.add(new Word("five", "pach"));
+        words.add(new Word("six", "choe"));
+        words.add(new Word("seven", "saat"));
+        words.add(new Word("eight", "aat"));
+        words.add(new Word("nine", "noe"));
+        words.add(new Word("ten", "doss"));
 
-        ArrayAdapter<String> listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
-        ListView listView = findViewById(R.id.list);
-        listView.setAdapter(listAdapter);
+        WordAdapter wordAdapter  = new WordAdapter(this,words);
+
+        ListView listView = findViewById(R.id.list_view);
+
+        listView.setAdapter(wordAdapter);
 
     }
 }
