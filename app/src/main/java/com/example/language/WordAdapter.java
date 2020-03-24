@@ -42,6 +42,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         mBengaliTranslation.setText(word.getmBengaliTranslation());
 
 
+            ImageView imageView = listItemView.findViewById(R.id.imageview);
+        if(word.isImageProvided()) {
+            imageView.setImageResource(word.getImageResourceId());
+        }else{
+            imageView.setVisibility(View.GONE);
+        }
+
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView
         return listItemView;

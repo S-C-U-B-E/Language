@@ -18,16 +18,16 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("one", "ek"));
-        words.add(new Word("two", "dui"));
-        words.add(new Word("three", "tin"));
-        words.add(new Word("four", "char"));
-        words.add(new Word("five", "pach"));
-        words.add(new Word("six", "choe"));
-        words.add(new Word("seven", "saat"));
-        words.add(new Word("eight", "aat"));
-        words.add(new Word("nine", "noe"));
-        words.add(new Word("ten", "doss"));
+        words.add(new Word("one", "ek", R.drawable.number_one));
+        words.add(new Word("two", "dui", R.drawable.number_two));
+        words.add(new Word("three", "tin", R.drawable.number_three));
+        words.add(new Word("four", "char", R.drawable.number_four));
+        words.add(new Word("five", "pach", R.drawable.number_five));
+        words.add(new Word("six", "choe", R.drawable.number_six));
+        words.add(new Word("seven", "saat", R.drawable.number_seven));
+        words.add(new Word("eight", "aat", R.drawable.number_eight));
+        words.add(new Word("nine", "noe", R.drawable.number_nine));
+        words.add(new Word("ten", "doos", R.drawable.number_ten));
 
         WordAdapter wordAdapter  = new WordAdapter(this,words);
 
