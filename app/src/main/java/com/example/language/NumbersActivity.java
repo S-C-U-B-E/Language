@@ -27,11 +27,11 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("seven", "saat", R.drawable.number_seven));
         words.add(new Word("eight", "aat", R.drawable.number_eight));
         words.add(new Word("nine", "noe", R.drawable.number_nine));
-        words.add(new Word("ten", "doos", R.drawable.number_ten));
+        words.add(new Word("ten", "dos", R.drawable.number_ten));
 
         WordAdapter wordAdapter  = new WordAdapter(this,words);
 
-        ListView listView = findViewById(R.id.list_view);
+        ListView listView = findViewById(R.id.listview_numbers);
 
         listView.setAdapter(wordAdapter);
 
